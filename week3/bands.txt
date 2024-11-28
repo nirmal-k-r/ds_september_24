@@ -1,0 +1,50 @@
+
+AT!BAND=4,"LTE B8",0,80
+AT!BAND=5,"LTE B28",0,8000000
+AT!BAND=6,"LTE B5",0,4000000
+AT!BAND=3,"LTE B38",0,2000000000
+AT!BAND=7,"LTE B40",0,8000000000
+
+
+AT!BAND=7,"LTE B1 b3 b38 b41",0,12000000005
+4
+AT!BAND=6,"LTE B3 b20 b38 b41",0,12000080004
+
+AT!BAND=5,"LTE B1 b3 b8 b38",0,2000000085
+
+AT!BAND=4,"LTE B1 b3",0,5
+
+AT!BAND=3,"LTE b3 b20 b38 b41",0,12000080004
+
+AT!BAND=6,"LTE B1 b3 b20 b41",0,10000080005
+
+
+
+B1= 18Mbps  
+B3=29
+b20=19
+b8= 6 40ms
+b38= 23Mbps no upload vey high latency
+b41= 20Mbps
+
+
+To test: b3, b5, b20
+Works: b1,b3,b8,b38,b41
+Not working; b2,b7,b28, b40, b5
+
+
+
+b1 b3 b8 good
+
+
+
+
+Configs 
+b1 b3 b7 b41 = 55
+b1 b3 b38 b41 = 65 -80
+b3 b20 b38 b41 = 25-40
+b1 b3 b8 b38 = 60-80 upload=25
+b1 b3 = 60 upload= 20
+b3 b20 b38 b41 = 12 upload=18
+
+b1 b3 b20 b41
